@@ -673,26 +673,7 @@ class AppTheme {
       clipBehavior: Clip.antiAliasWithSaveLayer,
     ),
 
-    // Dialog theme for dark mode
-    dialogTheme: DialogTheme(
-      backgroundColor: surfaceDark,
-      elevation: 8.0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12.0),
-      ),
-      titleTextStyle: GoogleFonts.inter(
-        fontSize: 20,
-        fontWeight: FontWeight.w600,
-        color: textPrimaryDark,
-      ),
-      contentTextStyle: GoogleFonts.inter(
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-        color: textPrimaryDark,
-      ),
-    ),
-  );
-
+    
   /// Helper method to build text theme with Persian-optimized fonts
   static TextTheme _buildTextTheme({required bool isLight}) {
     final Color textPrimary = isLight ? textPrimaryLight : textPrimaryDark;
